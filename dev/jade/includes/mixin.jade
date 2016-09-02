@@ -1,0 +1,26 @@
+mixin menu(a,b,c)
+	ul(class=b)
+		each val,index in a
+			li(class=c)
+				a(href=val) #{index}
+
+
+mixin way(arg)
+	.way
+		each val in arg
+			- 
+				if(val == 'HOME')
+					a(href='index.html').way_link #{val} 
+				else 
+					span &nbsp/ 
+					a(href='index.html').way_link #{val}
+
+
+mixin photoProduct(arr)
+	.photoProduct
+		each val in arr
+			.photoProduct_item
+				a(href= 'details.html')
+					img(src="http://placehold.it/208x256")
+				p.name #{val.name}
+				p.price #{val.price}

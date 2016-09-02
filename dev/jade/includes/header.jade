@@ -1,0 +1,28 @@
+header
+	.wrapper
+		.headlinks
+			.linksleft
+				.logo
+					a(href="index.html") 
+				+menu({'Woman':'woman.html','Men':'men.html','Kids':'kids.html','Comming Soon':'commingsoon.html','About':'about.html'},'list','listitem')
+			.linksright
+				.user
+					- var user='Dima'
+					if user
+						span Hi, #{user} 
+						a(href='index.home').userTrue (logout)
+					else
+						a(href='index.html') Log In
+				.basket
+					-var basket=0
+					a(href='basket.html') Basket
+					span(#{basket})
+				.search
+					- var active = false
+					if active
+						form.active
+							input(type='search' placeholder='Search something...')
+							input(type='submit')
+					else
+						form.pasive
+							input(type='submit')

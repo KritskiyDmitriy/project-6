@@ -1,0 +1,34 @@
+extends includes/template
+
+block title
+	title Men
+
+block link
+	link(rel='stylesheet' href='/css/style.css')
+	link(rel='stylesheet' href='/css/men.css')
+	link(rel='stylesheet' href='/slider.jade')
+
+block content
+	main
+		.wrapper
+			+way (['HOME', 'MEN'])
+			section.section1
+				h2 Coats
+				p
+					a(href='#').link_men show more
+				+photoProduct([{'price':'5$','name':'Double-Layered Top1'},
+					{'price':'10$', 'name':'Double-Layered Top2'},
+					{'price':'15$', 'name':'Double-Layered Top3'},
+					{'price':'20$', 'name':'Double-Layered Top4'}])
+			section.section2
+				h2 Outerwear
+				p
+					a(href='#').link_men show more
+				+photoProduct(['details.html', 'details.html', 'details.html', 'details.html'])
+			section.section3
+				h2 T-shirts
+				p
+					a(href='#').link_men show more
+				+photoProduct(['details.html', 'details.html', 'details.html', 'details.html'])
+			section.section4
+				include includes/slider

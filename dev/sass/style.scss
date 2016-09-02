@@ -1,0 +1,39 @@
+@import 'import/header.scss';
+@import 'import/footer.scss';
+*{
+	box-sizing:border-box;
+}
+.wrapper{
+	max-width: 1244px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 0 32px;
+}
+body{
+	background-color: #e5e5e5;
+}
+.slider{
+	display:flex;
+	justify-content:space-between;
+	margin-top:132px;
+	padding-bottom: 61px;
+	.left,
+	.right{
+		width: 39px;
+		height: 118px;
+		opacity: 0.6;
+		background-color: #e4e4e4;
+		position: relative;
+		font-size: 40px;
+		line-height: 118px;
+		color: #fff;
+		&:hover{
+			color:black;
+		}
+	}
+	.slider_content{
+		background-color: #bbb;
+		height: 118px;
+		width: calc(100% - 78px);
+	}
+}

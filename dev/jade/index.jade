@@ -1,0 +1,27 @@
+extends includes/template
+
+block title
+	title Home
+
+block link
+	link(rel='stylesheet' href='css/style.css')
+	link(rel='stylesheet' href='css/index.css')
+
+block content
+	main
+		.wrapper
+			section.section1
+				h1 Hazy Shade of spring
+				p Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+				button check new arrivals
+			section.section2
+				.mainPic
+					img(src="image/mainPic.png")
+			section.section3
+				h2 sign up to receive our updates
+				p Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+				form 
+					input.text(type="e-mail" placeholder="Your e-mail" )
+					input.button(type="submit" value= "Add")
+			section.section4
+				include includes/slider

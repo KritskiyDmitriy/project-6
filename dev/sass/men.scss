@@ -1,0 +1,46 @@
+	
+main{
+	.way_link{
+		color: #606060;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 43px;
+		text-transform: uppercase;
+		left: 55px;
+	}
+	section{
+		text-align: center;
+		h2{
+			line-height: 36px;
+			color: #303030;
+			font-family: Arial;
+			font-size: 36px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			margin:0 auto;
+			padding-top: 114px;
+		}
+		a{
+			line-height: 36px;
+			color: #606060;
+			font-family: Georgia;
+			font-size: 18px;
+			font-style: italic;
+			text-decoration: underline;
+			text-align: center;
+			text-decoration: none;
+		}
+		.photoProduct{
+			display: flex;
+			justify-content:space-between;
+			padding-top: 65px;
+		}
+	}
+	.section1,
+	.section2,
+	.section3{
+		padding-top: 50px;
+	}
+}
